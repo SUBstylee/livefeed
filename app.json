@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1c9c1102-7d0a-457b-b676-38ae51309386"
+      }
+    },
+    "owner": "substylee"
   }
 }
