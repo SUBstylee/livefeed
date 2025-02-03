@@ -1,0 +1,22 @@
+diff --git a/node_modules/react-native-pell-rich-editor/src/RichEditor.js b/node_modules/react-native-pell-rich-editor/src/RichEditor.js
+index 14bea22..827fda3 100755
+--- a/node_modules/react-native-pell-rich-editor/src/RichEditor.js
++++ b/node_modules/react-native-pell-rich-editor/src/RichEditor.js
+@@ -140,7 +140,8 @@ export default class RichTextEditor extends Component {
+ 
+   onMessage(event) {
+     const that = this;
+-    const {onFocus, onBlur, onChange, onPaste, onKeyUp, onKeyDown, onInput, onMessage, onCursorPosition, onLink} = that.props;
++    const {onFocus, onBlur, onChange, onPaste, onKeyUp, onKeyDown, onInput, onMessage, onCursorPosition, onLink} =
++      that.props;
+     try {
+       const message = JSON.parse(event.nativeEvent.data);
+       const data = message.data;
+@@ -267,7 +268,6 @@ export default class RichTextEditor extends Component {
+           ref={that.setRef}
+           onMessage={that.onMessage}
+           originWhitelist={['*']}
+-          dataDetectorTypes={'none'}
+           domStorageEnabled={false}
+           bounces={false}
+           javaScriptEnabled={true}
